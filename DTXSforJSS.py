@@ -112,7 +112,7 @@ def get_hardware_uuid():
 print get_hardware_uuid()
 
 # Setup Jamf API calls
-def jssAPICall(eaID, payload):
+def jssAPICall(payload):
     conn = httplib.HTTPSConnection(sys.argv[4])
 
     headers = {
@@ -200,9 +200,9 @@ def main():
         print "An error occurred during the DetectX search."
         sys.exit(1)
     # Start updating EA's
-    jssAPICall(sys.argv[6], "<computer><extension_attributes><extension_attribute><id>"+sys.argv[6]+"</id><name>"+sys.argv[7]+"</name><value>"+eaValUpdateDate('searchdate')+"</value></extension_attribute></extension_attributes></computer>")
-    jssAPICall(sys.argv[8], "<computer><extension_attributes><extension_attribute><id>"+sys.argv[8]+"</id><name>"+sys.argv[9]+"</name><value>"+eaValUpdate('issues')+"</value></extension_attribute></extension_attributes></computer>")
-    jssAPICall(sys.argv[10], "<computer><extension_attributes><extension_attribute><id>"+sys.argv[10]+"</id><name>"+sys.argv[11]+"</name><value>"+eaValUpdate('infections')+"</value></extension_attribute></extension_attributes></computer>")
+    jssAPICall("<computer><extension_attributes><extension_attribute><id>"+sys.argv[6]+"</id><name>"+sys.argv[7]+"</name><value>"+eaValUpdateDate('searchdate')+"</value></extension_attribute></extension_attributes></computer>")
+    jssAPICall("<computer><extension_attributes><extension_attribute><id>"+sys.argv[8]+"</id><name>"+sys.argv[9]+"</name><value>"+eaValUpdate('issues')+"</value></extension_attribute></extension_attributes></computer>")
+    jssAPICall("<computer><extension_attributes><extension_attribute><id>"+sys.argv[10]+"</id><name>"+sys.argv[11]+"</name><value>"+eaValUpdate('infections')+"</value></extension_attribute></extension_attributes></computer>")
     sys.exit(0)
 
 if __name__ == '__main__':
