@@ -1,5 +1,6 @@
 # dtxsforjss
-A Python script that will start a DetectX Swift search then update 3 Extension attributes (searchdate, issues, infections) via  Jamf API from results JSON. Using LaunchDaemon to call Jamf custom policy trigger we can have live return of results and notifications from jamf when something is found.
+Originally developed here: https://github.com/haircut/detectx-jamf \
+I wanted a way to run this script more often than standard Jamf frequency would currently allow. Ongoing would set to every check-in which is more than a little overkill (my JSS check-in is every 25 mins) yet the next option leaves us at once a day which I felt was not frequent enough. I also wanted a way to update the custom EA's without needing to run a full inventory update on the machine with each scan. Setting the script to ongoing with only a custom trigger now I am able to call this via a LaunchDaemon at any interval I'd like.
 
 **Setup DetectX Swift:**
 The search and update EA policy will cover install/reinstall of DetectX Swift if needed by trigger(InstallDetectX). That way if the user is able to remove the app and not the plist search the app will repopulate on next triggered scan. Install policy has dtxs registration, branded text, and plist load in postflight. Example of postflight for installer is:
@@ -48,3 +49,7 @@ Jamf policy for search should be set to Ongoing with only a custom trigger (defa
 **EAName (infections)** -Whatever name you used for your EA should be entered here.\
 
 **Extension Attributes**\
+Setup instructions and more information can be found by their original authors here:\
+https://github.com/haircut/detectx-jamf and here:\ 
+https://www.macblog.org/post/integrating-detectx-swift-with-jamf-pro-for-scheduled-malware-scanning/ \
+The XML formatting should allow you upload into your JSS server but I've also included a copy of the raw py coding as well. 
