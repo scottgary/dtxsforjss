@@ -4,7 +4,8 @@ A Python script that will start a DetectX Swift search then update 3 Extension a
 Setup DetectX Swift:
 The search and update EA policy will cover install/reinstall of DetectX Swift if needed by trigger(InstallDetectX). That way if the user is able to remove the app and not the plist search the app will repopulate on next triggered scan. Install policy has dtxs registration, branded text, and plist load in postflight. Example of postflight for installer is:
 
-```#!/bin/sh
+```
+#!/bin/sh
 ## postflight
 ##
 ## Not supported for flat packages.
@@ -17,7 +18,8 @@ defaults write /Library/Preferences/com.sqwarq.DetectX-Swift BrandedText "Exampl
 
 # Set plist for execution
 launchctl unload /Library/LaunchDaemons/com.jamfsoftware.dtxsforjss.plist
-launchctl load /Library/LaunchDaemons/com.jamfsoftware.dtxsforjss.plist```
+launchctl load /Library/LaunchDaemons/com.jamfsoftware.dtxsforjss.plist
+```
 
 
 Policy for Search:
