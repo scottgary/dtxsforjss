@@ -7,7 +7,7 @@
 	<key>InitGroups</key>
 	<true/>
 	<key>KeepAlive</key>
-	<true/>
+	<false/>
 	<key>Label</key>
 	<string>com.jamfsoftware.dtxsforjss.plist</string>
 	<key>Program</key>
