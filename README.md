@@ -35,3 +35,4 @@ Jamf Parameter Values:
 9-EAName (issues)
 10- EAID # (infections)
 11- EAName (infections)
+![JSSParameters](https://github.com/scottgary/dtxsforjss/blob/master/JSS%20Parameter%20Values.png)
