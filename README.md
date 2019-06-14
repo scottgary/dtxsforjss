@@ -24,14 +24,25 @@ launchctl load /Library/LaunchDaemons/com.jamfsoftware.dtxsforjss.plist
 
 Policy for Search:
 Jamf policy for search should be set to Ongoing with only a custom trigger (default is "DTXS"). If adjusting custom trigger ensure you are adjusting the trigger within the plist to call your policy:
+![JSSSearchPolicySetup](https://github.com/scottgary/dtxsforjss/blob/master/dtxsforjssPolicy.png)
 
-
-Jamf Parameter Values:
-4- JSS address
-5- API Auth (base64 obscurity)
-6- EAID # (date)
-7- EAName (date)
-8- EAID # (issues)
-9-EAName (issues)
-10- EAID # (infections)
-11- EAName (infections)
+Jamf Parameter Values:\
+\
+4- JSS address\
+5- API Auth (base64 obscurity)\
+6- EAID # (date)\
+7- EAName (date)\
+8- EAID # (issues)\
+9-EAName (issues)\
+10- EAID # (infections)\
+11- EAName (infections)\
+![JSSParameters](https://github.com/scottgary/dtxsforjss/blob/master/JSS%20Parameter%20Values.png)
+  
+**JSS Address** -\
+**API Auth (base64 obscurity)** -\
+**EAID # (date)** -\
+**EAName (date)** -\
+**EAID # (issues)** - \
+**EAName (issues)** -\
+**EAID # (infections)** -\
+**EAName (infections)** -\
