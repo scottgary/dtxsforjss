@@ -38,11 +38,11 @@ Jamf Parameter Values:\
 11- EAName (infections)\
 ![JSSParameters](https://github.com/scottgary/dtxsforjss/blob/master/JSS%20Parameter%20Values.png)
   
-*JSS Address* -\
-*API Auth (base64 obscurity)* -\
-*EAID # (date)* -\
-*EAName (date)* -\
-*EAID # (issues)* - \
-*EAName (issues)* -\
-*EAID # (infections)* -\
-*EAName (infections)* -\
+**JSS Address** -\
+**API Auth (base64 obscurity)** -\
+**EAID # (date)** -\
+**EAName (date)** -\
+**EAID # (issues)** - \
+**EAName (issues)** -\
+**EAID # (infections)** -\
+**EAName (infections)** -\
