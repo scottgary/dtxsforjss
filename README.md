@@ -49,7 +49,7 @@ Jamf policy for search should be set to Ongoing with only a custom trigger (defa
 **EAName (infections)** -Whatever name you used for your EA should be entered here.\
 
 **Extension Attributes**\
-Setup instructions and more information can be found by their original authors here:\
+Setup instructions and more information can be found by their original author here:\
 https://github.com/haircut/detectx-jamf and here:\ 
 https://www.macblog.org/post/integrating-detectx-swift-with-jamf-pro-for-scheduled-malware-scanning/ \
 The XML formatting should allow you upload into your JSS server but I've also included a copy of the raw py coding as well. 
