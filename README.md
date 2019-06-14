@@ -1,7 +1,7 @@
 # dtxsforjss
 A Python script that will start a DetectX Swift search then update 3 Extension attributes (searchdate, issues, infections) via  Jamf API from results JSON. Using LaunchDaemon to call Jamf custom policy trigger we can have live return of results and notifications from jamf when something is found.
 
-Setup DetectX Swift:
+**Setup DetectX Swift:**
 The search and update EA policy will cover install/reinstall of DetectX Swift if needed by trigger(InstallDetectX). That way if the user is able to remove the app and not the plist search the app will repopulate on next triggered scan. Install policy has dtxs registration, branded text, and plist load in postflight. Example of postflight for installer is:
 
 ```
@@ -22,11 +22,11 @@ launchctl load /Library/LaunchDaemons/com.jamfsoftware.dtxsforjss.plist
 ```
 
 
-Policy for Search:
+**Policy for Search:**
 Jamf policy for search should be set to Ongoing with only a custom trigger (default is "DTXS"). If adjusting custom trigger ensure you are adjusting the trigger within the plist to call your policy:
 ![JSSSearchPolicySetup](https://github.com/scottgary/dtxsforjss/blob/master/dtxsforjssPolicy.png)
 
-Jamf Parameter Values:\
+**Jamf Parameter Values:**\
 \
 4- JSS address\
 5- API Auth (base64 obscurity)\
@@ -46,3 +46,5 @@ Jamf Parameter Values:\
 **EAName (issues)** -Whatever name you used for your EA should be entered here.\
 **EAID # (infections)** -the ID of the **infections** extension attribute is displayed in the URL when you are looking at it in your Jamf Pro server. The URL will look something like `https://acme.jamfcloud.com/computerExtensionAttributes.html?id=82&o=r`. Grab that ID number and put it in parameter 10.\
 **EAName (infections)** -Whatever name you used for your EA should be entered here.\
+
+**Extension Attributes**\
