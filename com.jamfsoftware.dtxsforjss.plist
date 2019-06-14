@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GroupName</key>
+	<string>wheel</string>
+	<key>InitGroups</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>com.jamfsoftware.dtxsforjss.plist</string>
+	<key>Program</key>
+	<string>/usr/local/jamf/bin/jamf</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/jamf/bin/jamf</string>
+		<string>policy</string>
+		<string>-trigger</string>
+		<string>DTXS</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/private/var/log/dtxsforjss.err</string>
+	<key>StandardOutPath</key>
+	<string>/private/var/log/dtxsforjss.out</string>
+	<key>StartInterval</key>
+	<integer>3600</integer>
+	<key>UserName</key>
+	<string>root</string>
+</dict>
+</plist>
