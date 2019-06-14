@@ -27,6 +27,7 @@ Jamf policy for search should be set to Ongoing with only a custom trigger (defa
 ![JSSSearchPolicySetup](https://github.com/scottgary/dtxsforjss/blob/master/dtxsforjssPolicy.png)
 
 Jamf Parameter Values:\
+\
 4- JSS address\
 5- API Auth (base64 obscurity)\
 6- EAID # (date)\
@@ -36,3 +37,12 @@ Jamf Parameter Values:\
 10- EAID # (infections)\
 11- EAName (infections)\
 ![JSSParameters](https://github.com/scottgary/dtxsforjss/blob/master/JSS%20Parameter%20Values.png)
+  
+*JSS Address* -\
+*API Auth (base64 obscurity)* -\
+*EAID # (date)* -\
+*EAName (date)* -\
+*EAID # (issues)* - \
+*EAName (issues)* -\
+*EAID # (infections)* -\
+*EAName (infections)* -\
