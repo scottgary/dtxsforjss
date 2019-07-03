@@ -30,30 +30,14 @@ fi
 
 # Set log filename and path
 LogFile=$LogPath/"$LogName".log
-function SendToLog ()
-{
+function SendToLog (){
 
 echo "$(date +"%Y-%b-%d %T") : $1" | tee -a "$LogFile"
 
 }
+
 #log separator
 SendToLog "================Script start================"
-
-# Check JSS Par Values:
-#function CheckJssPar(){
-  # CHECK TO SEE IF A VALUE WAS PASSED IN PARAMETER 4 AND, IF SO, ASSIGN TO "LogName"
-#  if [ "$4" != "" ] && [ "$LogName" == "" ];then
-#    LogName=$4
-#  fi
-#  # CHECK TO SEE IF A VALUE WAS PASSED IN PARAMETER 5 AND, IF SO, ASSIGN TO "apiPass"
-#  if [ "$5" != "" ] && [ "$JSSServer" == "" ];then
-#    JSSServer=$5
-#  fi
-  # CHECK TO SEE IF A VALUE WAS PASSED IN PARAMETER 6 AND, IF SO, ASSIGN TO "resetUser"
-#  if [ "$6" != "" ] && [ "$APIAuth" == "" ];then
-#    APIAuth=$6
-#  fi
-#}
 
 function GetUserandUDID() {
   # Get Logged in User name
