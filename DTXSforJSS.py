@@ -138,9 +138,7 @@ def decode_results(path, section):
         with open(path, 'r') as data:
             try:
                 jsonResults = json.load(data)
-                print (section)
                 results = jsonResults[section]
-                print (results)
 
             except (KeyError, ValueError):
                 pass
