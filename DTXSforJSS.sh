@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Created by Scott Gary
 # Version History:
 #      6/17/19: function for jss api call
